@@ -1,37 +1,45 @@
-# _{Application Name}_
+# _Currency Exchanger_
 
-#### By _**{List of contributors}**_
+#### By _**Christina Welch**_
 
-#### _{Brief description of application}_
+#### _Convert an amount in US Dollar into other currencies_
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _CSS_
+* _Javascript_
+* _Jquery_
+* _Jest_
+* _Webpack_
+* _Babel_
+* _ExchangeRate-API_
+
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This was the end of week 6 project for Epicodus School used to demonstrate skills in retrieving and using an API. It uses ExchangeRate API to exchange USD to a number of different currencies. Thank you for visiting! _
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone this repository to your desktop_
+* _Navigate to Currency-Exchanger in your terminal_
+* _type npm install and press enter_
+* _Once everything has installed open a coding application of your choice. (this project was made using VSCode.)_
+* _in the terminal type npm run build and hit enter. If everything installed correctly this should run without error_
+* _You will need to get a key for the API used in this project. Visit https://www.exchangerate-api.com/ sign up for an account and verify your email._
+* _You can then sign in and view your key under API Keys in the left menu._
+* _Create a .env file in the top level of the folder and inside it put API_KEY= followed by your api key. no need for spaces or any sort of other coding._
+* _you can then type npm run start and enter in the terminal which will open the project._
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+_if you are unsure how to clone repositories from github see https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+no known bugs
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+MIT
 
-Copyright (c) _date_ _author name(s)_
+Copyright (c) _11/12/2021_ _Christina Welch_
