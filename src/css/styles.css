@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@media (max-width: 768px){
+  :root {
+    --scale: 1;
+  }
+}
+
+@media (max-width: 360px){
+  :root {
+    --scale: .8;
+  }
+}
+
+@media (min-width: 768px){
+  :root {
+    --scale: 1.7;
+  }
+}
+
+body {
+  text-align: center;
+  color: white;
+  font-family: 'poppins', Arial, Helvetica, sans-serif;
+}
+
+#container {
+  background-color: #324851;
+  max-width: 60em;
+  margin: 0 auto;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 1em;
+}
+
+h1 {
+  color:#87c5c2;
+  font-size: calc(2.5rem * var(--scale));
+  font-weight: bold;
+}
+
+h2 {
+  font-size: calc(1.2rem * var(--scale));
+  margin: .5em 0 2em 0;
+}
+
+form > * {
+  margin: 1em;
+}
+
+label {
+  font-size: calc(1rem * var(--scale));
+  margin-right: .5em;
+}
+
+input {
+  border: none;
+  border-radius: .5em;
+  padding: .5em 0;
+}
+
+select {
+  border: none;
+  border-radius: .5em;
+  padding: .5em 1em;
+}
+
+button {
+  border: none;
+  background-color:#86Ac41;
+  color: white;
+  padding: .5em 1em;
+  border-radius: .5em;
+}
+
+button:hover {
+  font-weight: bold;
+  background-color: white;
+  color: #87c5c2;
+}

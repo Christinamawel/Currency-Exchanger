@@ -10,7 +10,7 @@ $(document).ready(function() {
     event.preventDefault();
     let currency = $("#currency").val();
     let USD = $("#USD").val();
-    
+    $("#USD").val('');
 
     Currency.getConverter()
       .then(function(response) {
