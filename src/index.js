@@ -10,17 +10,18 @@ $(document).ready(function() {
     event.preventDefault();
     let currency = $("#currency").val();
     let USD = $("#USD").val();
+    
 
     Currency.getConverter()
       .then(function(response) {
-        if(response.conversion_rates[currency]) {
-          let convertedAmount = currencyConverter(USD, response.conversion_rates[currency]);
-          $("#output").text(`${convertedAmount} ${currency}`);
-        } else if (response.conversion_rates.USD) {
+        if(!response.conversion_rates) {
+          $("#showError").text(`${response}`);
+        } else if (!response.conversion_rates[currency]) {
           $("#showError").text(`cannot find conversion rate for ${currency}`);
         } else {
-          $("#showError").text(`Error: ${response.message}`);
+          let convertedAmount = currencyConverter(USD, response.conversion_rates[currency]);
+          $("#output").text(`${convertedAmount} ${currency}`);
         }
-      });
+      })
   });
 });
