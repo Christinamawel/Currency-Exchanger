@@ -15,11 +15,11 @@ $(document).ready(function() {
       .then(function(response) {
         if(response.conversion_rates[currency]) {
           let convertedAmount = currencyConverter(USD, response.conversion_rates[currency]);
-          $("#output").text(`${convertedAmount} ${currency}`)
+          $("#output").text(`${convertedAmount} ${currency}`);
         } else if (response.conversion_rates.USD) {
           $("#showError").text(`cannot find conversion rate for ${currency}`);
         } else {
-          $("#showError").text(`Error: ${response.message}`)
+          $("#showError").text(`Error: ${response.message}`);
         }
       });
   });

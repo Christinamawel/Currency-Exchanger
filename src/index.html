@@ -4,8 +4,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Currency Exchanger</title>
 </head>
 <body>
+  <h1>Currency Exchange Rates</h1>
+  <h2>from USD</h2>
+  <form id="currency-exchanger">
+    <label>Convert From:</label>
+    <input type="number" id="USD"  required> USD
+    <label>Convert to:</label>
+    <select name="currency" id="currency">
+      <option value="choose-an-option">--Please choose an option--</option>
+      <option value="EUR">Euro</option>
+      <option value="GBP">Great Britain pound</option>
+      <option value="JPY">Japanese Yen</option>
+      <option value="CHF">Swiss Franc</option>
+      <option value="AUD">Australian Dollar</option>
+      <option value="CAD">Canadian dollar</option>
+      <option value="CNY">China yuan renminbi</option>
+      <option value="NZD">New Zealand Dollar</option>
+      <option value="INR">Indian rupee</option>
+      <option value="SEK">Swedish krona</option>
+      <option value="ZAR">South African rand</option>
+      <option value="HKD">Hong Kong dollar</option>
+  </select>
+  <button type="submit">Exchange</button>
+  </form>
+  <div id="output div">
+    <h3 id="output"></h3>
+  </div>
+  <div id="error">
+    <h3 id="showError"></h3>
+  </div>
 </body>
 </html>
