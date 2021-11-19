@@ -11,17 +11,22 @@ $(document).ready(function() {
     let currency = $("#currency").val();
     let USD = $("#USD").val();
     $("#USD").val('');
+    $("#output-div").hide();
+    $("#error").hide();
 
     Currency.getConverter()
       .then(function(response) {
         if(!response.conversion_rates) {
           $("#showError").text(`${response}`);
+          $("#error").show();
         } else if (!response.conversion_rates[currency]) {
           $("#showError").text(`cannot find conversion rate for ${currency}`);
+          $("#error").show();
         } else {
           let convertedAmount = currencyConverter(USD, response.conversion_rates[currency]);
           $("#output").text(`${convertedAmount} ${currency}`);
+          $("#output-div").fadeIn();
         }
-      })
+      });
   });
 });

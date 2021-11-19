@@ -78,3 +78,11 @@ button:hover {
   background-color: white;
   color: #87c5c2;
 }
+
+#showError {
+  color: rgb(241, 50, 50);
+}
+
+#output {
+  color: #b6ce89;
+}
