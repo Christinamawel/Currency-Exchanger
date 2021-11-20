@@ -23,6 +23,8 @@ _This was the end of week 6 project for Epicodus School used to demonstrate skil
 
 ## Setup
 
+if you want to just see the page you can view it on gh-pages here https://christinamawel.github.io/Currency-Exchanger/
+
 * _Clone this repository to your desktop_
 * _Navigate to Currency-Exchanger in your terminal_
 * _type npm install and press enter_
