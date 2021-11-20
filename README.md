@@ -2,6 +2,8 @@
 
 #### By _**Christina Welch**_
 
+![money vector art](src/assets/money-art.jpg)
+
 #### _Convert an amount in US Dollars into other currencies_
 
 ## Technologies Used
